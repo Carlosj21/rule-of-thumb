@@ -5,6 +5,7 @@ import { mutations } from './mutations';
 import { MODULE_HOME } from './homeTypes';
 
 export const homeModuleContent = {
+  namespaced: true,
   state,
   actions,
   mutations,
@@ -12,3 +13,5 @@ export const homeModuleContent = {
 };
 
 export const homeModuleName = MODULE_HOME;
+
+export default {};
