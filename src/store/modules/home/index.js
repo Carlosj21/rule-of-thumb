@@ -4,12 +4,11 @@ import { getters } from './getters';
 import { mutations } from './mutations';
 import { MODULE_HOME } from './homeTypes';
 
-export const module = {
-  namespaced: true,
+export const homeModuleContent = {
   state,
   actions,
   mutations,
   getters,
 };
 
-export const name = MODULE_HOME;
+export const homeModuleName = MODULE_HOME;

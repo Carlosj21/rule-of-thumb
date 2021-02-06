@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Pope Francis",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "sector": "Religion",
+    "url": "https://es.wikipedia.org/wiki/Francisco_(papa)",
+    "dataSource": "wikipedia",
+    "createdAt": "06-02-2021 08:00:00",
+    "updatedAt": "06-02-2021 08:00:00",
+    "startDate": "06-02-2021 08:10:00",
+    "finishDate": "13-02-2021 08:10:00",
+    "thumbsUp": 15,
+    "thumbsDown": 5
+  },
+  {
+    "name": "Kanye West",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "sector": "Celebrities",
+    "url": "https://es.wikipedia.org/wiki/Kanye_West",
+    "dataSource": "wikipedia",
+    "createdAt": "06-02-2021 08:00:00",
+    "updatedAt": "06-02-2021 08:00:00",
+    "startDate": "06-02-2021 08:10:00",
+    "finishDate": "13-02-2021 08:10:00",
+    "thumbsUp": 5,
+    "thumbsDown": 15
+  },
+  {
+    "name": "Mark Zuckerberg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "sector": "Celebrities",
+    "url": "https://es.wikipedia.org/wiki/Mark_Zuckerberg",
+    "dataSource": "wikipedia",
+    "createdAt": "06-02-2021 08:00:00",
+    "updatedAt": "06-02-2021 08:00:00",
+    "startDate": "06-02-2021 08:10:00",
+    "finishDate": "13-02-2021 08:10:00",
+    "thumbsUp": 10,
+    "thumbsDown": 10
+  },
+  {
+    "name": "Malala Yousafzai",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "sector": "Celebrities",
+    "url": "https://es.wikipedia.org/wiki/Malala_Yousafzai",
+    "dataSource": "wikipedia",
+    "createdAt": "06-02-2021 08:00:00",
+    "updatedAt": "06-02-2021 08:00:00",
+    "startDate": "06-02-2021 08:10:00",
+    "finishDate": "13-02-2021 08:10:00",
+    "thumbsUp": 19,
+    "thumbsDown": 1
+  },
+  {
+    "name": "Cristina Fernández de Kirchner ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "sector": "Celebrities",
+    "url": "https://es.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
+    "dataSource": "wikipedia",
+    "createdAt": "06-02-2021 08:00:00",
+    "updatedAt": "06-02-2021 08:00:00",
+    "startDate": "06-02-2021 08:10:00",
+    "finishDate": "13-02-2021 08:10:00",
+    "thumbsUp": 19,
+    "thumbsDown": 1
+  }
+]
