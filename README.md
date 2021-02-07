@@ -12,8 +12,6 @@
     <i>This is a sample project to show an unique implementation of Vue.js</i>
 </h6>
 
----
-
 ## Getting Started 🚀
 
 _To use this project you must need basic knowledge of vue.js._
