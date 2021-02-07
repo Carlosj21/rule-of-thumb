@@ -7,11 +7,12 @@
 <h1 align="center">
     <strong>Rule of Thumb</strong>
 </h1>
-<hr>
 
 <h6 align="center">
     <i>This is a sample project to show an unique implementation of Vue.js</i>
 </h6>
+
+---
 
 ## Getting Started 🚀
 
