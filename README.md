@@ -1,29 +1,51 @@
-# rule-of-thumb
+<p align="center">
+    <a href="https://vuejs.org" target="_blank">
+        <img width="100" src="https://vuejs.org/images/logo.png">
+    </a>
+</p>
 
-## Project setup
+<h1 align="center">
+    <strong>Rule of Thumb</strong>
+</h1>
+<hr>
+
+<h6 align="center">
+    <i>This is a sample project to show an unique implementation of Vue.js</i>
+</h6>
+
+## Getting Started 🚀
+
+_To use this project you must need basic knowledge of vue.js._
+
+### Prerequisites 📋
+
+```
+Basic understanding of HTML, CSS, JavaScript and of course Vue.js.
+```
+
+### Commands 🔧
+
+_Step by step on how to get this working_
+
+#### Project setup
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
+###### BONUS
+#### Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Demo 📦
+
+*comming soon*
+
+## License 📄
+
+This work is licensed under a GNU GENERAL PUBLIC LICENSE (v3)
+

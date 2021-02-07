@@ -49,11 +49,11 @@ export default {
   computed: {
     thumbValue() {
       const total = this.candidate.thumbsUp + this.candidate.thumbsDown;
-      const up = Math.round((this.candidate.thumbsUp / total) * 100);
-      const down = Math.round((this.candidate.thumbsDown / total) * 100);
+      const up = (this.candidate.thumbsUp / total) * 100;
+      const down = (this.candidate.thumbsDown / total) * 100;
       return {
-        up,
-        down,
+        up: up.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0],
+        down: down.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0],
       };
     },
     itemBackground() {

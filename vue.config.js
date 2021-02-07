@@ -1,18 +1,25 @@
 const path = require('path');
 
 module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, 'src/'),
-      },
-    },
+  chainWebpack(config) {
+    config.entry('app')
+      .clear()
+      .add('./src/main.js')
+      .end();
+    config.resolve.alias.set('@', path.join(__dirname, './src'));
   },
   css: {
     loaderOptions: {
       sass: {
-        data: '@import "@/assets/scss/main.scss";',
+        sassOptions: {
+          includePaths: [
+            path.resolve(__dirname, 'src/core/'),
+          ],
+          indentedSyntax: true,
+        },
+        prependData: '@import "@/assets/scss/main.scss"',
       },
     },
   },
+  assetsDir: '@/assets/',
 };
