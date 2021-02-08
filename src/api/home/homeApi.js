@@ -7,4 +7,10 @@ export default class TemplatesApi {
       './data/candidates.json', 'GET', null, null,
     ));
   }
+
+  static getHeadlights() {
+    return requestHelper(formDataHelper(
+      './data/headlights.json', 'GET', null, null,
+    ));
+  }
 }

@@ -1,20 +1,7 @@
 [
   {
-    "name": "Pope Francis",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
-    "sector": "Religion",
-    "url": "https://es.wikipedia.org/wiki/Francisco_(papa)",
-    "dataSource": "wikipedia",
-    "createdAt": "06-02-2021 08:00:00",
-    "updatedAt": "06-02-2021 08:00:00",
-    "startDate": "06-02-2021 08:10:00",
-    "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 15000000000000,
-    "thumbsDown": 5000
-  },
-  {
     "name": "Kanye West",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
     "url": "https://es.wikipedia.org/wiki/Kanye_West",
     "dataSource": "wikipedia",
@@ -22,12 +9,13 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 5,
-    "thumbsDown": 15
+    "thumbsUp": 64,
+    "thumbsDown": 36,
+    "image" : "https://cflvdg.avoz.es/sc/OPtQ48cW591qoW2Z2WUVIIb6Xlg=/x/2020/07/05/00121593937381667640524/Foto/GL3P45F2_10222.jpg"
   },
   {
     "name": "Mark Zuckerberg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
     "url": "https://es.wikipedia.org/wiki/Mark_Zuckerberg",
     "dataSource": "wikipedia",
@@ -35,12 +23,13 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 10,
-    "thumbsDown": 10
+    "thumbsUp": 36,
+    "thumbsDown": 64,
+    "image" : "https://static.theceomagazine.net/wp-content/uploads/2018/07/09100940/Cover-story_Zuckerberg_AU0818-800x533.jpg"
   },
   {
     "name": "Malala Yousafzai",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
     "url": "https://es.wikipedia.org/wiki/Malala_Yousafzai",
     "dataSource": "wikipedia",
@@ -48,12 +37,13 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 19,
-    "thumbsDown": 1
+    "thumbsUp": 36,
+    "thumbsDown": 64,
+    "image" : "https://entaconadas.co/wp-content/uploads/2014/11/mas_Malala1.jpg"
   },
   {
-    "name": "Cristina Fernández de Kirchner ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci vulputate sed. Vestibulum dictum magna quis odio hendrerit, vitae maximus massa imperdiet. Etiam cursus dignissim varius. Etiam eleifend odio sollicitudin odio condimentum lacinia. Phasellus et erat tellus. Phasellus viverra, metus eget sodales ornare, nulla nisi convallis tortor, eget malesuada turpis nulla eget magna. Nullam nec lorem sed lacus semper mollis at et ex.",
+    "name": "Cristina Fernández de Kirchner",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
     "url": "https://es.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
     "dataSource": "wikipedia",
@@ -61,7 +51,8 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 19,
-    "thumbsDown": 1
+    "thumbsUp": 64,
+    "thumbsDown": 36,
+    "image" : "https://www.eldinamo.cl/wp-content/uploads/2020/04/C.jpg"
   }
 ]

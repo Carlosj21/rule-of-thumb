@@ -5,8 +5,10 @@ export const homeTypes = {
   getters: {},
   mutations: {
     SET_CANDIDATES: '@mutations/setCandidates',
+    SET_HEADLIGHTS: '@mutations/setHeadlights',
   },
   actions: {
     GET_CANDIDATES: '@actions/getCandidates',
+    GET_HEADLIGHTS: '@actions/getHeadlights',
   },
 };

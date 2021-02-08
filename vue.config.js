@@ -12,14 +12,17 @@ module.exports = {
     loaderOptions: {
       sass: {
         sassOptions: {
-          includePaths: [
-            path.resolve(__dirname, 'src/core/'),
-          ],
           indentedSyntax: true,
         },
-        prependData: '@import "@/assets/scss/main.scss"',
+        additionalData: '@import "@/assets/scss/main.scss"',
       },
     },
   },
   assetsDir: '@/assets/',
+  devServer: {
+    disableHostCheck: true,
+  },
+  transpileDependencies: [
+    'vuetify',
+  ],
 };

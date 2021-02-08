@@ -16,6 +16,20 @@ export const actions = {
         // loader off
       });
   },
+  [homeTypes.actions.GET_HEADLIGHTS]({ commit }) {
+    // loader on
+    commit(homeTypes.mutations.SET_CANDIDATES, {});
+    homeApi.getCandidates()
+      .then((response) => {
+        commit(homeTypes.mutations.SET_CANDIDATES, response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .then(() => {
+        // loader off
+      });
+  },
 };
 
 export default {};
