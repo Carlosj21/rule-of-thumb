@@ -1,0 +1,26 @@
+.thumbsBarArea {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  font-size: 40px;
+  width: 100%;
+  font-weight: lighter;
+
+  .thumbUpBar {
+    text-align: left;
+    background: rgba(49, 192, 186, 0.8);
+
+    .thumbUpIcon {
+
+    }
+  }
+
+  .thumbDownBar {
+    text-align: right;
+    background: rgba(207, 149, 47, 0.8);
+
+    .thumbDownIcon {
+
+    }
+  }
+}

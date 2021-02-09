@@ -2,6 +2,8 @@
   <v-app-bar
     app
     color="transparent"
+    flat
+    class="navBar"
   >
     <v-tabs right>
       <v-tab @click="$router.push('/')">

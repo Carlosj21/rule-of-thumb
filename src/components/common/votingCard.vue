@@ -1,7 +1,9 @@
 <template>
   <v-card
-    height="500"
+    height="800"
     width="80%"
+    elevation="0"
+    tile
   >
     <v-img
       class="white--text"
@@ -19,18 +21,32 @@
           {{ candidate.description }}
         </div>
       </v-card-text>
-<!--      <v-btn-->
-<!--        color="orange"-->
-<!--        text-->
-<!--      >-->
-<!--        {{ thumbValue.up }}%-->
-<!--      </v-btn>-->
-<!--      <v-btn-->
-<!--        color="orange"-->
-<!--        text-->
-<!--      >-->
-<!--        {{ thumbValue.down }}%-->
-<!--      </v-btn>-->
+      <div class="thumbsBarArea">
+        <div class="thumbUpBar" :style="thumbUpWidth">
+          <span class="pa-2">
+            <v-icon large color="white">mdi-thumb-up</v-icon>
+          </span>
+          {{ thumbValue.up }}%
+        </div>
+        <div class="thumbDownBar" :style="thumbDownWidth">
+          {{ thumbValue.down }}%
+          <span class=" pa-2">
+            <v-icon large color="white">mdi-thumb-down</v-icon>
+          </span>
+        </div>
+      </div>
+      <!--      <v-btn-->
+      <!--        color="orange"-->
+      <!--        text-->
+      <!--      >-->
+      <!--        {{ thumbValue.up }}%-->
+      <!--      </v-btn>-->
+      <!--      <v-btn-->
+      <!--        color="orange"-->
+      <!--        text-->
+      <!--      >-->
+      <!--        {{ thumbValue.down }}%-->
+      <!--      </v-btn>-->
     </v-img>
   </v-card>
 </template>
