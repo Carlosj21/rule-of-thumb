@@ -1,17 +1,15 @@
-[
-  {
-    "id": "1",
-    "name": "Pope Francis",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
-    "sector": "Religion",
-    "url": "https://es.wikipedia.org/wiki/Francisco_(papa)",
-    "dataSource": "wikipedia",
-    "createdAt": "06-02-2021 08:00:00",
-    "updatedAt": "06-02-2021 08:00:00",
-    "startDate": "06-02-2021 08:10:00",
-    "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 15000000000000,
-    "thumbsDown": 5000,
-    "image" : ""
-  }
-]
+{
+  "id": "1",
+  "name": "Pope Francis",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
+  "sector": "Religion",
+  "url": "https://es.wikipedia.org/wiki/Francisco_(papa)",
+  "dataSource": "wikipedia",
+  "createdAt": "06-02-2021 08:00:00",
+  "updatedAt": "06-02-2021 08:00:00",
+  "startDate": "06-02-2021 08:10:00",
+  "finishDate": "13-02-2021 08:10:00",
+  "thumbsUp": 15000000000000,
+  "thumbsDown": 5000,
+  "image": ""
+}

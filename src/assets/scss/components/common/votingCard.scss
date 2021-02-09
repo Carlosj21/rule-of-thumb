@@ -1,3 +1,6 @@
+$backgroundThumbUp: rgba(49, 192, 186, 0.8);
+$backgroundThumbDown: rgba(207, 149, 47, 0.8);
+
 .cardContent {
   background: linear-gradient(0, black, transparent);
   height: 100%;
@@ -5,7 +8,7 @@
 
   .cardInfo {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     margin-left: 10%;
 
     .candidateName {
@@ -22,6 +25,51 @@
   }
 }
 
+.cardVoteForm {
+  position: absolute;
+  bottom: 13%;
+  margin-left: 10%;
+
+  .thumbBtnUp {
+    background: $backgroundThumbUp;
+
+    &:hover {
+      box-shadow: 0 0 0 3px white inset;
+      cursor: pointer;
+    }
+  }
+
+  .thumbBtnDown {
+    background: $backgroundThumbDown;
+
+    &:hover {
+      box-shadow: 0 0 0 3px white inset;
+      cursor: pointer;
+    }
+  }
+
+  .btnActive {
+    box-shadow: 0 0 0 3px white inset;
+  }
+}
+
+.candidateState {
+  .thumb-up {
+    background: $backgroundThumbUp;
+    position: absolute;
+    bottom: 33%;
+    height: 35px;
+  }
+
+  .thumb-down {
+    background: $backgroundThumbDown;
+    position: absolute;
+    bottom: 33%;
+    height: 35px;
+
+  }
+}
+
 .thumbsBarArea {
   display: flex;
   bottom: 0;
@@ -32,19 +80,11 @@
 
   .thumbUpBar {
     text-align: left;
-    background: rgba(49, 192, 186, 0.8);
-
-    .thumbUpIcon {
-
-    }
+    background: $backgroundThumbUp;
   }
 
   .thumbDownBar {
     text-align: right;
-    background: rgba(207, 149, 47, 0.8);
-
-    .thumbDownIcon {
-
-    }
+    background: $backgroundThumbDown;
   }
 }

@@ -12,6 +12,14 @@
       :src="candidate.image"
     >
       <div class="cardContent">
+        <div class="candidateState">
+          <span class="thumb-up pa-1" v-if="thumbValue.up > thumbValue.down">
+            <v-icon medium color="white">mdi-thumb-up</v-icon>
+          </span>
+          <span class="thumb-down pa-1" v-else>
+            <v-icon medium color="white">mdi-thumb-down</v-icon>
+          </span>
+        </div>
         <div class="cardInfo">
           <div class="candidateName">
             {{ candidate.name }}
@@ -24,6 +32,34 @@
           <div class="candidateDescription">
             {{ candidate.description }}
           </div>
+        </div>
+        <div class="cardVoteForm" v-if="!voted">
+          <span :class="['pa-3 ma-2 thumbBtnUp', {'btnActive' : thumbUpSelected}]"
+                @click="setVoteValue('up')">
+            <v-icon medium color="white">mdi-thumb-up</v-icon>
+          </span>
+          <span :class="['pa-3 ma-2 thumbBtnDown', {'btnActive' : thumbDownSelected}]"
+                @click="setVoteValue('down')">
+            <v-icon medium color="white">mdi-thumb-down</v-icon>
+          </span>
+          <v-btn
+            outlined
+            color="white"
+            elevation="0"
+            @click="submitVote()"
+          >
+            Vote
+          </v-btn>
+        </div>
+        <div class="cardVoteForm" v-else>
+          <v-btn
+            outlined
+            color="white"
+            elevation="0"
+            @click="resetVote()"
+          >
+            Vote Again
+          </v-btn>
         </div>
         <div class="thumbsBarArea">
           <div class="thumbUpBar" :style="thumbUpWidth">
@@ -49,6 +85,14 @@ import moment from 'moment';
 
 export default {
   name: 'VotingCard',
+  data() {
+    return {
+      voted: false,
+      voteValue: '',
+      thumbUpSelected: false,
+      thumbDownSelected: false,
+    };
+  },
   props: {
     candidate: {
       type: Object,
@@ -93,6 +137,32 @@ export default {
     timeInfo() {
       const time = moment(this.candidate.createdAt);
       return time.calendar();
+    },
+  },
+  watch: {
+    voteValue(nVal) {
+      if (nVal === 'up') {
+        this.thumbUpSelected = true;
+        this.thumbDownSelected = false;
+      } else if (nVal === 'down') {
+        this.thumbUpSelected = false;
+        this.thumbDownSelected = true;
+      }
+    },
+  },
+  methods: {
+    setVoteValue(value) {
+      this.voteValue = value;
+    },
+    submitVote() {
+      console.log(`Submitted ${this.voteValue}`);
+      this.voted = true;
+    },
+    resetVote() {
+      this.voteValue = '';
+      this.thumbUpSelected = false;
+      this.thumbDownSelected = false;
+      this.voted = false;
     },
   },
 };
