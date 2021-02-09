@@ -1,3 +1,27 @@
+.cardContent {
+  background: linear-gradient(0, black, transparent);
+  height: 100%;
+  position: relative;
+
+  .cardInfo {
+    position: absolute;
+    bottom: 15%;
+    margin-left: 10%;
+
+    .candidateName {
+      font-size: 45px;
+    }
+
+    .candidateDate {
+
+    }
+
+    .candidateDescription {
+      margin: 10px;
+    }
+  }
+}
+
 .thumbsBarArea {
   display: flex;
   bottom: 0;

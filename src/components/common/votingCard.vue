@@ -4,49 +4,42 @@
     width="80%"
     elevation="0"
     tile
+    align="left"
   >
     <v-img
       class="white--text"
       height="100%"
       :src="candidate.image"
     >
-      <v-card-title>{{ candidate.name }}</v-card-title>
-      <v-card-subtitle class="pb-0" align="left">
-          <span class="white--text">
+      <div class="cardContent">
+        <div class="cardInfo">
+          <div class="candidateName">
+            {{ candidate.name }}
+          </div>
+          <div>
+          <span class="candidateDate">
             <b>{{ timeInfo }}</b> in {{ candidate.sector }}
           </span>
-      </v-card-subtitle>
-      <v-card-text class="text--primary" align="left">
-        <div class="white--text">
-          {{ candidate.description }}
+          </div>
+          <div class="candidateDescription">
+            {{ candidate.description }}
+          </div>
         </div>
-      </v-card-text>
-      <div class="thumbsBarArea">
-        <div class="thumbUpBar" :style="thumbUpWidth">
+        <div class="thumbsBarArea">
+          <div class="thumbUpBar" :style="thumbUpWidth">
           <span class="pa-2">
             <v-icon large color="white">mdi-thumb-up</v-icon>
           </span>
-          {{ thumbValue.up }}%
-        </div>
-        <div class="thumbDownBar" :style="thumbDownWidth">
-          {{ thumbValue.down }}%
-          <span class=" pa-2">
-            <v-icon large color="white">mdi-thumb-down</v-icon>
-          </span>
+            {{ thumbValue.up }}%
+          </div>
+          <div class="thumbDownBar" :style="thumbDownWidth">
+            {{ thumbValue.down }}%
+            <span class=" pa-2">
+              <v-icon large color="white">mdi-thumb-down</v-icon>
+            </span>
+          </div>
         </div>
       </div>
-      <!--      <v-btn-->
-      <!--        color="orange"-->
-      <!--        text-->
-      <!--      >-->
-      <!--        {{ thumbValue.up }}%-->
-      <!--      </v-btn>-->
-      <!--      <v-btn-->
-      <!--        color="orange"-->
-      <!--        text-->
-      <!--      >-->
-      <!--        {{ thumbValue.down }}%-->
-      <!--      </v-btn>-->
     </v-img>
   </v-card>
 </template>

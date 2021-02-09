@@ -1,5 +1,6 @@
 [
   {
+    "id": "2",
     "name": "Kanye West",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
@@ -14,6 +15,7 @@
     "image" : "https://cflvdg.avoz.es/sc/OPtQ48cW591qoW2Z2WUVIIb6Xlg=/x/2020/07/05/00121593937381667640524/Foto/GL3P45F2_10222.jpg"
   },
   {
+    "id": "3",
     "name": "Mark Zuckerberg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
@@ -28,6 +30,7 @@
     "image" : "https://static.theceomagazine.net/wp-content/uploads/2018/07/09100940/Cover-story_Zuckerberg_AU0818-800x533.jpg"
   },
   {
+    "id": "4",
     "name": "Malala Yousafzai",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
@@ -42,6 +45,7 @@
     "image" : "https://entaconadas.co/wp-content/uploads/2014/11/mas_Malala1.jpg"
   },
   {
+    "id": "5",
     "name": "Cristina Fernández de Kirchner",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum eros quam, vel ultrices orci",
     "sector": "Celebrities",
