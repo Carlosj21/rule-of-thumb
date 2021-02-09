@@ -2,9 +2,11 @@
   <v-app-bar
     app
     flat
+    absolute
     color="transparent"
     class="navBar white--text"
   >
+    <v-app-bar-title>Rule of Thumb</v-app-bar-title>
     <v-tabs right>
       <v-tab @click="redirectTo('/')">
         <span>Home</span>

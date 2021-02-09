@@ -8,6 +8,8 @@ export const homeTypes = {
     SET_HEADLIGHTS: '@mutations/setHeadlights',
   },
   actions: {
+    SET_LOCAL_STORAGE: '@actions/setLocalStorage',
+    GET_DATA: '@actions/getData',
     GET_CANDIDATES: '@actions/getCandidates',
     GET_HEADLIGHTS: '@actions/getHeadlights',
   },

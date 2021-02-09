@@ -19,11 +19,11 @@ export default {
   },
   methods: {
     ...mapActions(homeTypes.PATH, {
-      getCandidates: homeTypes.actions.GET_CANDIDATES,
+      getData: homeTypes.actions.GET_DATA,
     }),
   },
   mounted() {
-    this.getCandidates();
+    this.getData();
   },
 };
 </script>

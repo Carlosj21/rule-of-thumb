@@ -1,6 +1,6 @@
 <template>
   <v-container fill-height fluid>
-    <div>
+    <div class="sectionTitle">
       <span>Votes</span>
     </div>
     <v-row>

@@ -1,18 +1,18 @@
 <template>
   <v-app>
-    <NabBar></NabBar>
+    <NavBar></NavBar>
     <v-main>
       <router-view/>
     </v-main>
   </v-app>
 </template>
 <script>
-import NabBar from '@/components/common/navBar.vue';
+import NavBar from '@/components/common/navBar.vue';
 
 export default {
   name: 'App',
   components: {
-    NabBar,
+    NavBar,
   },
 };
 </script>

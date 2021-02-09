@@ -7,6 +7,7 @@ module.exports = {
       .add('./src/main.js')
       .end();
     config.resolve.alias.set('@', path.join(__dirname, './src'));
+    config.resolve.alias.set('@store', path.join(__dirname, './store'));
   },
   css: {
     loaderOptions: {

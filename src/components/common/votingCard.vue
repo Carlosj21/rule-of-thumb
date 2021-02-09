@@ -43,20 +43,26 @@
             <v-icon medium color="white">mdi-thumb-down</v-icon>
           </span>
           <v-btn
+            tile
+            large
             outlined
             color="white"
             elevation="0"
             @click="submitVote()"
+            v-if="voteValue"
           >
-            Vote
+            Vote Now
           </v-btn>
         </div>
         <div class="cardVoteForm" v-else>
           <v-btn
+            tile
+            large
             outlined
             color="white"
             elevation="0"
             @click="resetVote()"
+            v-if="voteValue"
           >
             Vote Again
           </v-btn>
