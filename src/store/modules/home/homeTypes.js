@@ -6,6 +6,7 @@ export const homeTypes = {
   mutations: {
     SET_CANDIDATES: '@mutations/setCandidates',
     SET_HEADLIGHTS: '@mutations/setHeadlights',
+    SUBMIT_VOTE: '@mutations/submitVote',
   },
   actions: {
     SET_LOCAL_STORAGE: '@actions/setLocalStorage',

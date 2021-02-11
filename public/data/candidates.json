@@ -10,8 +10,8 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 100,
-    "thumbsDown": 50,
+    "thumbsUp": 0,
+    "thumbsDown": 0,
     "image" : "https://www.ecured.cu/images/b/b3/Kanye-west-11.jpeg"
   },
   {
@@ -25,8 +25,8 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 36,
-    "thumbsDown": 64,
+    "thumbsUp": 0,
+    "thumbsDown": 0,
     "image" : "https://img-s1.onedio.com/id-56694b60ea15c6ef34e81eb0/rev-0/raw/s-3f3f7f90a8eea79d01d48a3b258b194170d9b8b1.jpg"
   },
   {
@@ -40,8 +40,8 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 36,
-    "thumbsDown": 64,
+    "thumbsUp": 0,
+    "thumbsDown": 0,
     "image" : "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=ZEG2h2PwHoVj0LGC2nw4Gc$daE2N3K4ZzOUsqbU5sYsm5WB2lJKhNYiY6JFw7jqHWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg"
   },
   {
@@ -55,8 +55,8 @@
     "updatedAt": "06-02-2021 08:00:00",
     "startDate": "06-02-2021 08:10:00",
     "finishDate": "13-02-2021 08:10:00",
-    "thumbsUp": 64,
-    "thumbsDown": 36,
+    "thumbsUp": 0,
+    "thumbsDown": 0,
     "image" : "https://img2.rtve.es/v/5230302/"
   }
 ]

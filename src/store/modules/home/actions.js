@@ -3,20 +3,23 @@ import { homeTypes } from './homeTypes';
 
 export const actions = {
   [homeTypes.actions.SET_LOCAL_STORAGE]({ state }) {
-    localStorage.setItem('candidates', JSON.stringify({
-      candidates: state.candidates,
-      headLights: state.headLights,
-    }));
+    localStorage.setItem('candidates', JSON.stringify(state.candidates));
+    localStorage.setItem('headLights', JSON.stringify(state.headLights));
   },
   [homeTypes.actions.GET_DATA]({
     commit,
     dispatch,
   }) {
-    if (localStorage.candidates) {
-      commit(homeTypes.mutations.SET_CANDIDATES, JSON.parse(localStorage.data).candidates);
-      commit(homeTypes.mutations.SET_HEADLIGHTS, JSON.parse(localStorage.data).headLights);
+    const candidates = JSON.parse(localStorage.getItem('candidates')) || [];
+    const headLights = JSON.parse(localStorage.getItem('headLights')) || {};
+    if (candidates.length > 0) {
+      commit(homeTypes.mutations.SET_CANDIDATES, candidates);
     } else {
       dispatch(homeTypes.actions.GET_CANDIDATES);
+    }
+    if (Object.keys(headLights).length > 0) {
+      commit(homeTypes.mutations.SET_HEADLIGHTS, headLights);
+    } else {
       dispatch(homeTypes.actions.GET_HEADLIGHTS);
     }
   },
@@ -25,7 +28,6 @@ export const actions = {
     dispatch,
   }) {
     // loader on
-    commit(homeTypes.mutations.SET_CANDIDATES, {});
     homeApi.getCandidates()
       .then((response) => {
         commit(homeTypes.mutations.SET_CANDIDATES, response.data);
@@ -43,8 +45,7 @@ export const actions = {
     dispatch,
   }) {
     // loader on
-    commit(homeTypes.mutations.SET_HEADLIGHTS, {});
-    homeApi.getCandidates()
+    homeApi.getHeadlights()
       .then((response) => {
         commit(homeTypes.mutations.SET_HEADLIGHTS, response.data);
         dispatch(homeTypes.actions.SET_LOCAL_STORAGE);

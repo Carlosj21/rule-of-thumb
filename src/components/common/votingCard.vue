@@ -68,14 +68,22 @@
           </v-btn>
         </div>
         <div class="thumbsBarArea">
-          <div class="thumbUpBar" :style="thumbUpWidth">
+          <div class="thumbUpBar"
+               :style="thumbUpWidth"
+          >
           <span class="pa-2">
             <v-icon large color="white">mdi-thumb-up</v-icon>
           </span>
-            {{ thumbValue.up }}%
+            <span v-if="parseInt(thumbValue.down) < 80">
+              {{ thumbValue.up }}%
+            </span>
           </div>
-          <div class="thumbDownBar" :style="thumbDownWidth">
-            {{ thumbValue.down }}%
+          <div class="thumbDownBar"
+               :style="thumbDownWidth"
+          >
+            <span v-if="parseInt(thumbValue.up) < 80">
+              {{ thumbValue.down }}%
+            </span>
             <span class=" pa-2">
               <v-icon large color="white">mdi-thumb-down</v-icon>
             </span>
@@ -88,6 +96,8 @@
 
 <script>
 import moment from 'moment';
+import { mapMutations } from 'vuex';
+import { homeTypes } from '@/store/modules/home/homeTypes';
 
 export default {
   name: 'VotingCard',
@@ -123,8 +133,12 @@ export default {
   computed: {
     thumbValue() {
       const total = this.candidate.thumbsUp + this.candidate.thumbsDown;
-      const up = (this.candidate.thumbsUp / total) * 100;
-      const down = (this.candidate.thumbsDown / total) * 100;
+      let up = 0;
+      let down = 0;
+      if (total > 0) {
+        up = (this.candidate.thumbsUp / total) * 100;
+        down = (this.candidate.thumbsDown / total) * 100;
+      }
       return {
         up: up.toString()
           .match(/^-?\d+(?:\.\d{0,2})?/)[0],
@@ -133,12 +147,30 @@ export default {
       };
     },
     thumbUpWidth() {
-      const val = parseFloat(this.thumbValue.up);
-      return `width: ${val.toFixed(2)}%;`;
+      const upVal = parseFloat(this.thumbValue.up);
+      const downVal = parseFloat(this.thumbValue.down);
+      let width = '';
+      if (upVal === 0 && downVal === 0) {
+        width = 'width: 50%;';
+      } else if (upVal === 100) {
+        width = 'width: 100%;';
+      } else {
+        width = `width: ${upVal.toFixed(2)}%;`;
+      }
+      return width;
     },
     thumbDownWidth() {
-      const val = parseFloat(this.thumbValue.down);
-      return `width: ${val.toFixed(2)}%;`;
+      const upVal = parseFloat(this.thumbValue.up);
+      const downVal = parseFloat(this.thumbValue.down);
+      let width = '';
+      if (upVal === 0 && downVal === 0) {
+        width = 'width: 50%;';
+      } else if (downVal === 100) {
+        width = 'width: 100%;';
+      } else {
+        width = `width: ${downVal.toFixed(2)}%;`;
+      }
+      return width;
     },
     timeInfo() {
       const time = moment(this.candidate.createdAt);
@@ -157,11 +189,18 @@ export default {
     },
   },
   methods: {
+    ...mapMutations(homeTypes.PATH, {
+      storeSubmitVote: homeTypes.mutations.SUBMIT_VOTE,
+    }),
     setVoteValue(value) {
       this.voteValue = value;
     },
     submitVote() {
       console.log(`Submitted ${this.voteValue}`);
+      this.storeSubmitVote({
+        id: this.candidate.id,
+        voteValue: this.voteValue,
+      });
       this.voted = true;
     },
     resetVote() {

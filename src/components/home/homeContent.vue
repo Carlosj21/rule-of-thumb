@@ -13,7 +13,7 @@
 
 <script>
 import VotingCard from '@/components/common/votingCard.vue';
-import { mapState } from 'vuex';
+import { mapActions, mapState } from 'vuex';
 import { homeTypes } from '@/store/modules/home/homeTypes';
 
 export default {
@@ -25,6 +25,19 @@ export default {
     ...mapState(homeTypes.PATH, [
       'candidates',
     ]),
+  },
+  watch: {
+    candidates: {
+      handler() {
+        this.setLocalStorage();
+      },
+      deep: true,
+    },
+  },
+  methods: {
+    ...mapActions(homeTypes.PATH, {
+      setLocalStorage: homeTypes.actions.SET_LOCAL_STORAGE,
+    }),
   },
 };
 </script>

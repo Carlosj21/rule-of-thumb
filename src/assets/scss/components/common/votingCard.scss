@@ -71,11 +71,12 @@ $backgroundThumbDown: rgba(207, 149, 47, 0.8);
 }
 
 .thumbsBarArea {
-  display: flex;
   bottom: 0;
-  position: absolute;
-  font-size: 40px;
   width: 100%;
+  display: flex;
+  position: absolute;
+  max-height: 60px;
+  font-size: 40px;
   font-weight: lighter;
 
   .thumbUpBar {
