@@ -8,6 +8,12 @@
         <VotingCard :candidate="candidate"/>
       </v-col>
     </v-row>
+    <v-row
+      justify="center"
+    >
+      <v-container>
+      </v-container>
+    </v-row>
   </v-container>
 </template>
 
