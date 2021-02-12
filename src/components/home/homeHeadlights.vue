@@ -2,10 +2,9 @@
   <div class="homeHeadlights">
     <v-img
       class="white--text"
-      height="100%"
       :src="candidate.image"
     >
-      <homeHeadlightsVotingCard></homeHeadlightsVotingCard>
+      <homeHeadlightsVotingCard :candidate="candidate"></homeHeadlightsVotingCard>
     </v-img>
   </div>
 </template>

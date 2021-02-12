@@ -1,0 +1,24 @@
+.highlightVoteCard {
+  position: absolute;
+  margin: 30% !important;
+  height: 600px;
+  width: 600px;
+  backdrop-filter: blur(100px);
+  text-align: left;
+  padding: 7%;
+
+  .highlightVoteCardTitle {
+    font-size: 16px;
+    color: #dbdbdb
+  }
+
+  .highlightVoteCardName {
+    font-size: 60px;
+  }
+
+  .highlightVoteCardDescription {
+    font-size: 25px;
+    color: #cacaca;
+    margin: 5px;
+  }
+}
